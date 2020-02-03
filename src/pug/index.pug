@@ -1,0 +1,24 @@
+extends templates/_layout.pug
+
+block title
+  title 秋田男声合唱団 : トップページ
+
+block content
+  #r_main
+    #fb-root
+    script(async='', defer='', crossorigin='anonymous', src='https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v5.0')
+    .main_logo
+      img(src='image/logo.gif', alt='秋田男声合唱団')
+    .stagephoto
+      img(src='image/stagephoto1.jpg', alt='ステージの様子(第5回記念演奏会2005年9月10日)')
+    h2 お知らせ
+    ul
+      li
+        | 団員募集中！詳しくは
+        a(href='member.html') メンバー紹介のページ
+        | をご覧ください。
+    .facebook_inline
+      .fb-page(data-href='https://www.facebook.com/akitadansei/', data-tabs='timeline', data-width='500', data-height='500', data-small-header='true', data-adapt-container-width='true', data-hide-cover='true', data-show-facepile='false')
+        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/akitadansei/')
+          a(href='https://www.facebook.com/akitadansei/') 秋田男声合唱団
+  // r_main

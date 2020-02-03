@@ -1,0 +1,30 @@
+doctype html
+html(lang='ja')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+
+    block title
+
+    link(rel='stylesheet', type='text/css', href='css/default.css')
+    link(rel='stylesheet', type='text/css', href='css/large.css', media='screen and (min-width: 700px)')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+  body
+
+    header
+      #ul_logo
+        a(href='/')
+          img(src='image/logoicon.gif', alt='秋田男声合唱団トップへ')
+      #ur_logo
+        img(src='image/granpaicon.gif', alt='グランパくん')
+
+    main
+      block content
+
+      include ../components/_sidebar.pug
+
+    footer
+      p
+        | お問い合わせは、秋田男声合唱団事務局 
+        img.mail_addr(src='image/mail.png')
+        |  までどうぞ
